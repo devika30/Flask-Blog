@@ -38,14 +38,18 @@
                 </div> 
             </fieldset>
             <div class="form-group">
-                {{ form.submit.label(class="btn btn-outline-info") }}
+                {{ form.submit(class="btn btn-outline-info") }}
             </div>
-            <div class="form-group">
-               <small>
-                   Need an account <a href="{{url_for('register')}}">Sign Up</a>
-               </small>
-            </div>
+            <small class="text-muted ml-2">
+                <a href="#">Forgot Password?</a>
+            </small>
+           
         </form>
     </div>
+    <div class="border-top pt-3">
+        <small class="text-muted">
+            Need an account <a href="{{url_for('register')}}">Sign Up</a>
+        </small>
+     </div>
 
 {% endblock content %}
